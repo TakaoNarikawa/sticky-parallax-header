@@ -64,7 +64,8 @@ class StickyParallaxHeader extends Component {
 
     if (isRenderingTabs && prevPage !== currentPage && isFolded) {
       const currentScrollPosition = this.scrollY.__getValue().y;
-      const scrollHeight = Math.max(parallaxHeight, headerHeight * 2);
+      // const scrollHeight = Math.max(parallaxHeight, headerHeight * 2);
+      const scrollHeight = parallaxHeight;
 
       this.tabsScrollPosition[prevPage] = currentScrollPosition;
 
