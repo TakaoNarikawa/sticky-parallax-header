@@ -339,7 +339,8 @@ class StickyParallaxHeader extends Component {
       refreshControl,
     } = this.props;
     const { currentPage, isFolded } = this.state;
-    const scrollHeight = Math.max(parallaxHeight, headerHeight * 2);
+    // const scrollHeight = Math.max(parallaxHeight, headerHeight * 2);
+    const scrollHeight = parallaxHeight;
     const headerStyle = header.props.style;
     const isArray = Array.isArray(headerStyle);
     const arrayHeaderStyle = {};
