@@ -118,14 +118,14 @@ class ScrollableTabBar extends React.PureComponent {
     return (
       <View
         style={[
-          styles.container,
+          styles.container,tabsContainerStyle,
           {
             backgroundColor: tabsContainerBackgroundColor,
           },
         ]}>
         <ScrollView
           style={styles.nestedStyle}
-          contentContainerStyle={[styles.contentContainer, tabsContainerStyle]}
+          contentContainerStyle={[styles.contentContainer]}
           ref={(r) => (this.scrollView = r)}
           onScrollEndDrag={(event) => (this.currentXPosition = event.nativeEvent.contentOffset.x)}
           vertical={false}
