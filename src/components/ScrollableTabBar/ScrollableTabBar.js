@@ -132,6 +132,7 @@ class ScrollableTabBar extends React.PureComponent {
             onScrollEndDrag={(event) => (this.currentXPosition = event.nativeEvent.contentOffset.x)}
             vertical={false}
             horizontal
+            nestedScrollEnabled
             bounces={false}
             showsHorizontalScrollIndicator={false}>
             {tabs.map((tab, page) => {
